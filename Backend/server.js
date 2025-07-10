@@ -19,7 +19,7 @@ await connectDB();
 // await connectCloudinary();
 app.post('/stripe',express.raw({type:'application/json'}),stripeWebhooks)
 
-const allowedOrigins=['http://localhost:5173']//only these can access our backend server
+const allowedOrigins=['http://localhost:5173','https://green-cart-frontend-umber.vercel.app']//only these can access our backend server
 
 //Middleware configuration
 app.use(express.json())
